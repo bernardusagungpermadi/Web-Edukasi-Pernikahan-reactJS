@@ -1,0 +1,25 @@
+.hero__section {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+.hero__content h2{
+    margin-top: 55px;
+    line-height: 40px;
+}
+
+.search input {
+    border: 0.1px solid #FFC2C7;
+    padding: 7px 10%;
+    border-radius: 50px;
+}
+
+.btn__search {
+    background-color: #FFC2C7;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 90px;
+    margin-left: -60px;
+    outline: none;
+    color: white;
+}

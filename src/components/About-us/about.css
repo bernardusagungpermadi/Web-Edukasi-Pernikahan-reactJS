@@ -1,0 +1,22 @@
+.counter__container {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.counter {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.counter__title {
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.about__content {
+    padding-left: 50px;
+}
+
