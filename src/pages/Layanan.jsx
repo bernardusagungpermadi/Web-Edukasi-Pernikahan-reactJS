@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import ContactUs from '../components/Layanan/ContactUs'
 
 const Layanan = () => {
   return (
-    <div>Layanan</div>
+    <Fragment>
+      <ContactUs />
+    </Fragment>
   )
 }
 

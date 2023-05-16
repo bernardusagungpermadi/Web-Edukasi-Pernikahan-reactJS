@@ -1,0 +1,41 @@
+.article__title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.article{
+    justify-content: center;
+    gap: 4rem;
+}
+
+.article__content{
+    width: min-content;
+    padding: 5px 5px 5px;
+}
+.article__img img {
+    position: relative;
+    width: 300PX;
+    height: 200px;
+    border-radius: 2px;
+}
+
+
+.article__btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: var(--color-primary);
+    border: 0.1px solid var(--color-primary);
+    color: white;
+    position: relative;
+    margin-left: 12rem;
+    top: -18px;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 24px;
+}
+
+.article__btn:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+

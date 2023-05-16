@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,71 +6,256 @@
 
 :root {
   --color-primary: #FFC2C7;
-  --color-sprearmint : #B6E5D8;
-  --color-peach:#FBE5C8;
+  --color-sprearmint: #B6E5D8;
+  --color-peach: #FBE5C8;
   --color-neutral01: #151515;
   --color-neutral02: #3C3C3C;
   --color-neutral03: #8A8A8A;
-  --color-neutral03: #D0D0D0;
-  --color-white :#ffff;
+  --color-neutral04: #D0D0D0;
+  --color-white: #ffff;
   --color-transparent: rgba(255, 255, 255, 0.1);
-
-  --color-danger:#FA2C5A;
-  --color-warning:#F9CC00;
-  --color-sucsses:#73CA5C;
-
+  --color-danger: #FA2C5A;
+  --color-warning: #F9CC00;
+  --color-success: #73CA5C;
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
-
-  --transition:all 400ms ease;
-}
-
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Rubik', sans-serif; 
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-p {
-  line-height: 0.9rem;
-}
-
-.mb-4 {
-  line-height: 20px;
-  margin-top: 5rem;
+  --transition: all 400ms ease;
 }
 
 h1,
 h2,
 h3,
-h4
+h4,
 h5 {
-    line-height: 3rem;
+  line-height: 1.5;
+  color: var(--color-font);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 h1 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 h3 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
- font-size: 1.3rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
 }
+
 
 .button {
-  display:none;
+  display: none;
 }
 
+/* Login */
+.login__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: var(--color-primary);
+  height: 100vh;
+}
+
+.login__left {
+  display: flex;
+  height: 100vh;
+  background-color: var(--color-white);
+  padding-top: 5rem;
+  justify-content: center;
+}
+
+.login__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-left: 5rem;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.aunt h4 {
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.login__logo h5 {
+  color: rgb(202, 4, 4);
+  padding-left: 10px;
+  padding-top: 5px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.login__logo img {
+  height: 45px;
+  width: 45px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 5px;
+}
+
+form input {
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid #8A8A8A;
+  padding-left: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 370px;
+  height: 38.25px;
+}
+
+.btn-login-register {
+  border-radius: 10px;
+  border: none;
+  height: 36px;
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #FF8F98;
+  color: var(--color-white);
+  font-weight: 
+ 600;
+}
+
+.register {
+  padding-left: 3rem;
+}
+
+.login__right{
+  margin: 0;
+}
+
+.login__right img {
+position: relative;
+align-items: center;
+margin-left: 4rem;
+}
+
+/* ====== Artikel ====== */
+.artikelpage{
+ display: flex;
+ margin-top: 10rem;
+ margin-bottom: 5rem;
+}
+
+/* ===== Dashboard Admin ===== */
+.content{
+  position: fixed;
+  top: 70px;
+  left: 260px;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 0px 30px;
+}
+
+
+/* =========== BreadCrumbs ============ */
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  border-bottom: 1px solid var(--color-primary);
+  height: 4rem;
+  width: 100%;
+  padding: 20px 10px 10px;
+  border-radius: 4px;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.breadcrumb-item:last-child {
+  font-weight: bold;
+}
+
+.breadcrumb-item:last-child a {
+  color: var(--color-neutral01);
+  cursor: default;
+}
+
+.breadcrumb-item:not(:last-child) a {
+  color: var(--color-danger);
+  text-decoration: none;
+}
+
+.breadcrumb-item:not(:last-child) a:hover {
+  text-decoration: underline;
+}
+
+
+/* ======== CHAT AHLI =========== */
+
+.chatAhli {
+  margin-top: 1rem;
+}
+
+.chatAhli div {
+  margin-bottom: 1rem;
+}
+
+.ahli-img {
+  width: 150px;
+}
+
+.ahli-img img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ahli-item {
+  display: flex;
+  margin-bottom: 1rem;
+  border-right: 1px solid #ccc;
+  padding-right: 1rem;
+}
+
+.ahli-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.ahli-title {
+  margin-left: 1rem;
+}
+
+.chat-btn {
+  padding: 0.4rem 1rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.breadcrumbs {
+  margin-top: 5rem;
+}

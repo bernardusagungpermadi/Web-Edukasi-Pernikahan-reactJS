@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Courses from '../components/Courses/Courses'
+
 
 const Edukasi = () => {
   return (
-    <div>Edukasi</div>
+    <Fragment>
+      <Courses />
+    </Fragment>
   )
 }
 

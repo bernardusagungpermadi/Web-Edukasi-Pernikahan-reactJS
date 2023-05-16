@@ -1,0 +1,48 @@
+.fitur_container {
+  text-align: center;
+}
+
+.fitures {
+  margin-bottom: 2rem;
+}
+
+.fitures p {
+  line-height: 1.5;
+}
+
+.single__fitur__item {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 1rem;
+  padding: 15px;
+}
+
+.fitur__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fitur__img {
+  background-color: antiquewhite;
+  border: 0.1px solid var(--color-primary);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fitur__img img {
+  width: 60%;
+  height: auto;
+}
+
+.fitur__title {
+  padding-top: 0.6rem;
+  line-height: 1.2;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
